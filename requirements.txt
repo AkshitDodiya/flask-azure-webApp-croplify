@@ -1,6 +1,6 @@
-numpy
-pandas
+numpy==1.18.1
 flask
+pandas
 requests
 torch
 torchvision
