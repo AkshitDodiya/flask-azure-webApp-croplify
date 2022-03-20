@@ -35,3 +35,11 @@ jobs:
         run: |
           python test.py
         
+      - name: Upload artifact for deployment jobs
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-app
+          path: |
+            . 
+            !venv/
+        
