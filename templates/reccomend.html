@@ -1,0 +1,55 @@
+{% extends 'layout.html' %} 
+{% block body %}
+<link rel="icon" href="{{url_for('static',filename='./images/leaf.png')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='./css/crop-form.css')}}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+
+<!--Form Section-->
+<br /><br />
+<h2 style="text-align: center; margin: 0px; color: black">
+  <b>Reccomend something based on your Experience so we can improvise the dataset</b>
+</h2>
+<br />
+
+<div
+  style="
+    width: 350px;
+    height: 70rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+  "
+>
+<form action="https://formspree.io/f/xoqybwwd" method="POST" class="form-all">
+    <label>
+      Your email:
+      <input type="email" name="_replyto" class="mail-input">
+    </label>
+    <label>
+      Your message:
+      <input type="text" name="message" class="mail-input"></textarea>
+    </label>
+    <label>
+        Data Recommendation :
+        <input type="text" name="recommend"  class="mail-input"></textarea>
+    </label>
+    
+    <button type="submit" class="submit">Send</button>
+    </form>
+</div>
+
+
+
+<!-- Form section -->
+
+{% endblock %}

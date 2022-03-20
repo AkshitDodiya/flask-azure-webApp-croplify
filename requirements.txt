@@ -1,0 +1,7 @@
+flask
+numpy
+pandas
+requests
+torch
+torchvision
+sklearn

@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croplify</title>
+
+</head>
+<link rel="icon" href="{{url_for('static',filename='./images/leaf.png')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+<body>
+
+
+<main>
+    <section class="hero" id="about">
+        <div class="hero-introduction">
+            <h2>Croplify<img src="{{url_for('static',filename='./images/leaf.png')}}" class="header-leaf"></h2>
+        <p class="hero-text">
+            Your Farming Decisions Made Easy.
+            <br>
+            Tap Set & That's It
+        </p>
+       <button class="button">
+        <a href="{{ url_for('crop_recommend') }}">CROP RECOMMENDATION</a>
+       </button> 
+        </div>
+       
+        <div class="hero-images">
+            <img src="{{url_for('static',filename='/images/plant1.png')}}" alt="" class="plant1 plant">
+            <img src="{{url_for('static',filename='/images/plant2.png')}}" class="plant2 plant">
+        </div>
+    </section>
+
+    <section class="section2">
+        <h1 class="about-header flex">ABOUT US</h1>
+        <div class="about-container">
+            <img src="{{url_for('static',filename='/images/farmy.svg')}}" class="farmy">
+            <div class="about-text">
+                <h1>IMPROVING AGRICULTURE, IMPROVING LIVES</h1>
+                <p>
+                    We use state-of-the-art machine learning and deep learning technologies 
+                    to help you guide through the entire farming process. Make informed decisions to 
+                    understand the demographics of your area, understand the factors that 
+                    affect your crop and keep them healthy for a super awesome successful yield.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="third-section">
+        <h1 class="service-header flex">OUR SERVICES</h1>
+
+        <div class="third-container">
+            <div class="select-choice">
+            <img src="{{url_for('static',filename='/images/Mobile.svg')}}" class="Mobile-img">
+            <button class="mobile-text small-button"> <a href="{{ url_for('crop_recommend') }}">CROP</a> </button>
+            </div>
+
+            <div class="select-choice2">
+            <img src="{{url_for('static',filename='/images/Mobile.svg')}}" class="Mobile-img2">
+            <button class="mobile-text-fertilizer small-button"> <a href="{{ url_for('fertilizer_recommendation') }}">FERTILIZER</a> </button>
+            </div>
+
+            <div class="select-choice2">
+                <img src="{{url_for('static',filename='/images/Mobile.svg')}}" class="Mobile-img2">
+                <button class="mobile-text-diseases small-button"> <a href="{{ url_for('disease_prediction') }}">DISEASES</a></button>
+                </div>
+        </div>
+
+    </section>
+
+    <footer class="footer flex">
+        <h1>Farmy</h1>
+    </footer>
+
+</body>
+</html>
+{% endblock %}

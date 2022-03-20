@@ -1,0 +1,25 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 0.89) !important;
+  color: black;
+}
+#crop-button {
+  border: 3px solid rgb(111, 240, 111) !important;
+  border-radius: 0px;
+  height: 70px !important;
+  width: 25rem;
+  color: black !important;
+  background-color: white !important;
+  font-size: 27px;
+}
+#crop-button:hover {
+  background-color: rgb(111, 240, 111) !important;
+  color: black !important;
+}
+input {
+  padding: 2rem !important;
+  font-family: "Poppins", sans-serif !important ;
+  color: black !important;
+  border: 3px solid greenyellow !important;
+  font-size: 15px !important;
+}
