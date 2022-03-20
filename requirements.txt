@@ -1,6 +1,6 @@
-flask
 numpy
 pandas
+flask
 requests
 torch
 torchvision
